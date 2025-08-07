@@ -3,27 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pass your prop firm challenge with confidence. Expert trading strategies, 1-on-1 coaching, and proven tools to help you succeed with FTMO, The5%ers, and other prop firms. Join thousands of successful funded traders.">
-    <title>The Prop Firm Pass - Expert Trading Strategies & Coaching for Prop Firm Success</title>
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="The Prop Firm Pass - Expert Trading Strategies & Coaching">
-    <meta property="og:description" content="Pass your prop firm challenge with confidence. Expert trading strategies, 1-on-1 coaching, and proven tools to help you succeed with FTMO, The5%ers, and other prop firms.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jatinkataria2105.github.io/">
-    <meta property="og:site_name" content="The Prop Firm Pass">
-    <meta property="og:locale" content="en_US">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Prop Firm Pass - Expert Trading Strategies & Coaching">
-    <meta name="twitter:description" content="Pass your prop firm challenge with confidence. Expert trading strategies, 1-on-1 coaching, and proven tools to help you succeed with FTMO, The5%ers, and other prop firms.">
-    
-    <!-- Additional SEO Meta Tags -->
-    <meta name="keywords" content="prop firm challenge, FTMO, trading strategies, forex coaching, funded trader, prop trading, trading tools, risk management">
-    <meta name="author" content="The Prop Firm Pass">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://jatinkataria2105.github.io/">
+    <title>The Prop Firm Pass</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -33,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <style>
         :root {
@@ -1948,6 +1929,46 @@
             z-index: 1;
         }
 
+        /* --- Client Proof Slider Section --- */
+        .client-proof {
+            padding: 8rem 2rem;
+            background-color: var(--light);
+        }
+
+        .client-proof-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .proof-slider {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .proof-slider .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 320px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+        }
+
+        .proof-slider .swiper-slide img {
+            display: block;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .proof-slider .swiper-pagination-bullet-active {
+            background-color: var(--primary);
+        }
+
+        .proof-slider .swiper-button-next,
+        .proof-slider .swiper-button-prev {
+            color: var(--primary);
+        }
+
         /* Responsive Styles */
         @media (max-width: 1024px) {
             .hero-title {
@@ -2118,44 +2139,39 @@
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="#home" class="logo" aria-label="The Prop Firm Pass Home"><span>TPFP</span></a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><span>TPFP</span></a>
 
-                <div class="nav-links">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#features" class="nav-link">Features</a>
-                    <a href="#pricing" class="nav-link">Pricing</a>
-                    <a href="#testimonials" class="nav-link">Testimonials</a>
-                    <a href="#faq" class="nav-link">FAQ</a>
-                    <a href="#pricing" class="cta-button">Get Started</a>
-                </div>
-
-                <button class="mobile-menu-button" aria-label="Open mobile menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#pricing" class="cta-button">Get Started</a>
             </div>
-        </nav>
 
-        <div class="mobile-menu">
-            <button class="mobile-menu-close" aria-label="Close mobile menu">
-                <i class="fas fa-times"></i>
+            <button class="mobile-menu-button">
+                <i class="fas fa-bars"></i>
             </button>
-
-            <div class="mobile-nav-links">
-                <a href="#home" class="mobile-nav-link">Home</a>
-                <a href="#features" class="mobile-nav-link">Features</a>
-                <a href="#pricing" class="mobile-nav-link">Pricing</a>
-                <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
-                <a href="#faq" class="mobile-nav-link">FAQ</a>
-                <a href="#pricing" class="cta-button mobile-cta">Get Started</a>
-            </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section id="home" class="hero">
+    <div class="mobile-menu">
+        <button class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#features" class="mobile-nav-link">Features</a>
+            <a href="#pricing" class="mobile-nav-link">Pricing</a>
+            <a href="#faq" class="mobile-nav-link">FAQ</a>
+            <a href="#pricing" class="cta-button mobile-cta">Get Started</a>
+        </div>
+    </div>
+
+    <section id="home" class="hero">
         <canvas class="hero-canvas" id="hero-canvas"></canvas>
 
         <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
@@ -2163,11 +2179,11 @@
             <p class="hero-description">Join thousands of traders who have successfully passed their evaluations using our expertise and tools.</p>
             <div class="hero-buttons">
                 <a href="#pricing" class="hero-button-primary">
-                    <span>View Our Pricing Plans</span>
+                    <span>View Pricing</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
                 <a href="#features" class="hero-button-secondary">
-                    <span>Learn About Our Services</span>
+                    <span>Learn More</span>
                     <i class="fas fa-info-circle"></i>
                 </a>
             </div>
@@ -2273,7 +2289,7 @@
                         </div>
                     </div>
 
-                    <a href="https://nowpayments.io/payment/?iid=5198912261&source=button" target="_blank" rel="noopener" class="pricing-button" aria-label="Purchase Basic Plan for $49">
+                    <a href="https://nowpayments.io/payment/?iid=5198912261&source=button" target="_blank" class="pricing-button">
                         Get Started
                     </a>
                 </div>
@@ -2318,7 +2334,7 @@
                         </div>
                     </div>
 
-                    <a href="https://nowpayments.io/payment/?iid=5213662210&source=button" target="_blank" rel="noopener" class="pricing-button" aria-label="Purchase Premium Plan for $149">
+                    <a href="https://nowpayments.io/payment/?iid=5213662210&source=button" target="_blank" class="pricing-button">
                         Get Started
                     </a>
                 </div>
@@ -2357,7 +2373,7 @@
                         </div>
                     </div>
 
-                    <a href="https://nowpayments.io/payment/?iid=4980678574&source=button" target="_blank" rel="noopener" class="pricing-button" aria-label="Purchase VIP Plan for $399">
+                    <a href="https://nowpayments.io/payment/?iid=4980678574&source=button" target="_blank" class="pricing-button">
                         Get Started
                     </a>
                 </div>
@@ -2404,8 +2420,8 @@
                     </div>
 
                     <div class="account-management-buttons" data-aos="fade-up" data-aos-delay="300">
-                        <a href="https://nowpayments.io/payment/?iid=5734137268" target="_blank" rel="noopener" class="account-btn-primary">Get Started</a>
-                        <a href="https://t.me/tpfpadmin/" target="_blank" rel="noopener" class="account-btn-secondary">Chat</a>
+                        <a href="https://nowpayments.io/payment/?iid=5734137268" target="_blank" class="account-btn-primary">Get Started</a>
+                        <a href="https://t.me/tpfpadmin/" target="_blank" class="account-btn-secondary">Chat</a>
                     </div>
                 </div>
 
@@ -2561,11 +2577,11 @@
                     </div>
 
                     <div class="copy-trading-buttons" data-aos="fade-up" data-aos-delay="400">
-                        <a href="https://nowpayments.io/payment/?iid=5081594734" target="_blank" rel="noopener" class="copy-btn-primary">
+                        <a href="https://nowpayments.io/payment/?iid=5081594734" target="_blank" class="copy-btn-primary">
                             Start Copy Trading
                             <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="https://t.me/tpfpadmin/" target="_blank" rel="noopener" class="copy-btn-secondary">
+                        <a href="https://t.me/tpfpadmin/" target="_blank" class="copy-btn-secondary">
                             Learn More
                             <i class="fas fa-info-circle"></i>
                         </a>
@@ -2624,64 +2640,42 @@
         </div>
     </section>
 
-    <section id="testimonials" class="testimonials">
-        <div class="testimonials-container">
-            <h2 class="section-title" data-aos="fade-up">Success Stories</h2>
-            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">See what our clients have to say about their experience with The Prop Firm Pass.</p>
+    <section id="client-proof" class="client-proof">
+        <div class="client-proof-container">
+            <h2 class="section-title" data-aos="fade-up">Real Member Success</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Screenshots from members who have passed their challenges and made profits.</p>
 
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.3">
-                    <div class="testimonial-header">
-                        <div class="testimonial-info">
-                            <div class="testimonial-name">James R.</div>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="testimonial-text">"The strategies provided helped me pass my FTMO challenge on the first try. The coaching sessions were invaluable in correcting my mistakes early."</p>
-                    <i class="fas fa-quote-right testimonial-quote"></i>
+            <div class="swiper proof-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-07-17_01-49-18.jpg" alt="Client Result 1"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-07-17_11-59-12.jpg" alt="Client Result 2"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-07-22_00-20-12.jpg" alt="Client Result 3"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-07-23_20-47-27.jpg" alt="Client Result 4"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-07-24_19-36-05.jpg" alt="Client Result 5"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-07-25_19-58-34.jpg" alt="Client Result 6"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-07-29_19-15-43.jpg" alt="Client Result 7"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-07-29_21-24-05.jpg" alt="Client Result 8"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-07-30_21-02-31.jpg" alt="Client Result 9"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-07-31_19-51-15.jpg" alt="Client Result 10"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-01_01-32-03.jpg" alt="Client Result 11"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-02_00-56-10.jpg" alt="Client Result 12"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-02_01-56-41%20(2).jpg" alt="Client Result 13"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-02_01-56-41.jpg" alt="Client Result 14"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-04_21-37-47.jpg" alt="Client Result 15"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-04_22-57-58.jpg" alt="Client Result 16"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-05_21-06-39.jpg" alt="Client Result 17"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-05_21-06-41.jpg" alt="Client Result 18"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-05_22-08-24.jpg" alt="Client Result 19"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-05_22-08-26.jpg" alt="Client Result 20"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-06_01-10-25.jpg" alt="Client Result 21"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-06_20-30-00.jpg" alt="Client Result 22"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-06_20-30-01.jpg" alt="Client Result 23"/></div>
+                    <div class="swiper-slide"><img src="https://cdn.jsdelivr.net/gh/jatinkataria2105/jatinkataria2105.github.io@main/images/photo_2025-08-06_21-19-10.jpg" alt="Client Result 24"/></div>
                 </div>
-
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.3">
-                    <div class="testimonial-header">
-                        <div class="testimonial-info">
-                            <div class="testimonial-name">Sarah K.</div>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="testimonial-text">"As someone who failed multiple challenges before, The Prop Firm Pass gave me the structured approach I needed to finally succeed."</p>
-                    <i class="fas fa-quote-right testimonial-quote"></i>
-                </div>
-
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.3">
-                    <div class="testimonial-header">
-                        <div class="testimonial-info">
-                            <div class="testimonial-name">Michael T.</div>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="testimonial-text">"The risk management tools alone were worth the investment. I passed two different firm challenges back-to-back using these methods."</p>
-                    <i class="fas fa-quote-right testimonial-quote"></i>
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-        </div>
     </section>
 
     <section id="faq" class="faq">
@@ -2759,10 +2753,9 @@
         <div class="cta-container" data-aos="fade-up">
             <h2 class="cta-title">Ready to Pass Your Prop Firm Challenge?</h2>
             <p class="cta-description">Join thousands of successful traders today and start your journey to becoming a funded trader.</p>
-            <a href="#pricing" class="cta-button">Start Your Prop Firm Journey Today</a>
+            <a href="#pricing" class="cta-button">Get Started Now</a>
         </div>
-        </section>
-    </main>
+    </section>
 
     <footer class="footer">
         <div class="footer-container">
@@ -2782,10 +2775,9 @@
             <div class="footer-col">
                 <h3 class="footer-heading">Quick Links</h3>
                 <div class="footer-links">
-                    <a href="#home" class="footer-link"><i class="fas fa-chevron-right"></i> Home Page</a>
-                    <a href="#features" class="footer-link"><i class="fas fa-chevron-right"></i> Our Features</a>
-                    <a href="#pricing" class="footer-link"><i class="fas fa-chevron-right"></i> Pricing Plans</a>
-                    <a href="#testimonials" class="footer-link"><i class="fas fa-chevron-right"></i> Client Testimonials</a>
+                    <a href="#home" class="footer-link"><i class="fas fa-chevron-right"></i> Home</a>
+                    <a href="#features" class="footer-link"><i class="fas fa-chevron-right"></i> Features</a>
+                    <a href="#pricing" class="footer-link"><i class="fas fa-chevron-right"></i> Pricing</a>
                     <a href="#faq" class="footer-link"><i class="fas fa-chevron-right"></i> FAQ</a>
                 </div>
             </div>
@@ -2793,21 +2785,21 @@
             <div class="footer-col">
                 <h3 class="footer-heading">Resources</h3>
                 <div class="footer-links">
-                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Prop Firm Trading Guides</a>
-                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Trading Strategy Library</a>
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Trading Guides</a>
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Strategy Library</a>
                     <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Prop Firm Reviews</a>
-                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Trading Blog</a>
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Blog</a>
                 </div>
             </div>
 
             <div class="footer-col">
                 <h3 class="footer-heading">Contact</h3>
                 <div class="footer-links">
-                    <a href="https://t.me/tfppadmin/" target="_blank" rel="noopener" class="footer-link">
-                        <i class="fab fa-telegram"></i> Telegram Support
+                    <a href="https://t.me/tpfpadmin/" target="_blank" class="footer-link">
+                        <i class="fab fa-telegram"></i> Telegram
                     </a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tpfpteam@gmail.com" target="_blank" rel="noopener" class="footer-link">
-                        <i class="fas fa-envelope"></i> Email Support
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tpfpteam@gmail.com" target="_blank" class="footer-link">
+                        <i class="fas fa-envelope"></i> Gmail Support
                     </a>
                 </div>
             </div>
@@ -2818,10 +2810,11 @@
         </div>
     </footer>
 
-    <a href="https://t.me/tpfpadmin/" target="_blank" rel="noopener" class="telegram-float" aria-label="Contact us on Telegram">
+    <a href="https://t.me/tpfpadmin/" target="_blank" class="telegram-float">
         <i class="fab fa-telegram"></i>
     </a>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize AOS
@@ -3080,6 +3073,34 @@
 
             statNumbers.forEach(number => {
                 statsObserver.observe(number);
+            });
+
+            // Initialize the Client Proof Slider
+            const proofSwiper = new Swiper('.proof-slider', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             });
         });
     </script>
